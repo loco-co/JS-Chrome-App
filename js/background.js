@@ -11,4 +11,4 @@ const bgImage = document.createElement("img");
 bgImage.src = `img/${todayImage}`;
 bgImage.classList.add("bgImage");
 
-document.body.appendChild(bgImage);
+document.body.prepend(bgImage);
