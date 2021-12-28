@@ -11,4 +11,6 @@ const bgImage = document.createElement("img");
 bgImage.src = `img/${todayImage}`;
 bgImage.classList.add("bgImage");
 
-document.body.prepend(bgImage);
+const bodyElement = document.body.querySelector("div");
+
+bodyElement.prepend(bgImage);
