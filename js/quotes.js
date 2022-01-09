@@ -44,3 +44,5 @@ const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = todayQuote.quote;
 author.innerText = todayQuote.author;
+quote.classList.add("white");
+author.classList.add("white");

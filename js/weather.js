@@ -10,6 +10,8 @@ function onGeoSuccess(position) {
         const city = document.querySelector("#weather span:last-child");
         weather.innerText = `${object.weather[0].description} / ${object.main.temp}`;
         city.innerText = object.name;
+        weather.classList.add("white");
+        city.classList.add("white");
     });
 }
 
