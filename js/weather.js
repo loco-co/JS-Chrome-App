@@ -8,7 +8,7 @@ function onGeoSuccess(position) {
     .then(object => {
         const weather = document.querySelector("#weather span:first-child");
         const city = document.querySelector("#weather span:last-child");
-        weather.innerText = `${object.weather[0].description} / ${object.main.temp}`;
+        weather.innerText = `${object.weather[0].description}\n${object.main.temp} ºC`;
         city.innerText = object.name;
         weather.classList.add("white");
         city.classList.add("white");
